@@ -1,11 +1,13 @@
 import React from "react";
 import "./style.css";
 import { makeStyles } from '@material-ui/core/styles';
-import BoardHomePage from "./containers/BoardHomePage";
+import BoardHomePage from "./pages/Home";
+import Routes from "./Routes";
 
 const useStyles = makeStyles(() => ({
   main:{
-    backgroundColor: 'F2F2F2#'
+    backgroundColor: 'F2F2F2#',
+    margin: 0
   }
 }));
 
@@ -14,7 +16,7 @@ export default function App() {
 
   return (
     <div className={classes.main}>
-      <BoardHomePage/>
+      <Routes/>
     </div>
   );
 }
